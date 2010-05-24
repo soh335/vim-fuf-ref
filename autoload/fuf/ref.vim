@@ -86,7 +86,7 @@ function s:handler.onOpen(word, mode)
   elseif a:mode == 4
     let s = "tabedit"
   end
-  call ref#open(self.menu, a:word, s)
+  call ref#open(self.menu, a:word, {'open': s})
 endfunction
 
 "
